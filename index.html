@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini SPA 2.0 — Modular</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    body { margin: 0; background:#0b1020; color:#e8eefc; }
+    header { display:flex; gap:12px; align-items:center; padding:16px 20px; border-bottom:1px solid #243; }
+    header a { color:#a5c4ff; text-decoration:none; padding:6px 10px; border-radius:8px; }
+    header a.active { background:#1a2440; }
+    main { padding:24px; max-width:920px; margin:auto; }
+    .card { background:#0f1730; border:1px solid #213057; padding:16px; border-radius:14px; box-shadow:0 10px 30px rgba(0,0,0,.25); }
+    button { background:#2d5bff; color:white; border:0; padding:10px 14px; border-radius:10px; cursor:pointer; }
+    button:disabled { opacity:.6; cursor:not-allowed; }
+    code { background:#0b132a; padding:2px 6px; border-radius:6px; color:#bde0fe; }
+    small.muted { color:#9bb0d1; }
+    input, select { background:#0b132a; color:#e8eefc; border:1px solid #213057; border-radius:10px; padding:10px 12px; }
+    .row { display:flex; gap:12px; flex-wrap:wrap; }
+    .error { color:#ffb4b4; }
+    .gap { height:12px; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
